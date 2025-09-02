@@ -1,15 +1,15 @@
-import type { Commit, Context } from 'semantic-release';
-import { PluginFn } from 'semantic-release-plugin-decorators';
-import { executorContext } from './executor-context';
 import { ExecutorContext, createProjectGraphAsync } from '@nx/devkit';
-import { getProjectDependencies } from '../common/project';
+import type { AnalyzeCommitsContext, Commit } from 'semantic-release';
+import { PluginFn } from 'semantic-release-plugin-decorators';
 import { isCommitAffectingProjects } from '../common/git';
+import { getProjectDependencies } from '../common/project';
 import { promiseFilter } from '../utils/promise-filter';
+import { executorContext } from './executor-context';
 
 export const getCommitsForProject =
   (verbose?: boolean) =>
   (plugin: PluginFn) =>
-  async (config: unknown, context: Context) => {
+  async (config: unknown, context: AnalyzeCommitsContext) => {
     if (!executorContext) {
       throw new Error('Executor context is missing.');
     }
@@ -19,7 +19,7 @@ export const getCommitsForProject =
     }
 
     const filteredCommits = await filterCommits(
-      context.commits,
+      context.commits as [],
       executorContext,
       context,
       verbose
@@ -34,7 +34,7 @@ export const getCommitsForProject =
 async function filterCommits(
   commits: Commit[],
   executorContext: ExecutorContext,
-  context: Context,
+  context: AnalyzeCommitsContext,
   verbose?: boolean
 ) {
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion

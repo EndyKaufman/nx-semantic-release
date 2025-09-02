@@ -104,13 +104,13 @@ function createPackageJsonForProjects() {
 
 async function bootstrapTestProjectsAndLibs() {
   testApps.forEach((project) => {
-    const command = `generate @nx/web:application apps/${project} --e2e-test-runner=none`;
+    const command = `generate @nx/web:application ${project} --directory apps/${project} --e2e-test-runner=none`;
 
     runNxCommand(command);
   });
 
   testLibs.forEach((lib) => {
-    runNxCommand(`generate @nx/js:library libs/${lib}`);
+    runNxCommand(`generate @nx/js:library ${lib} --directory libs/${lib}`);
   });
 
   createPackageJsonForProjects();
