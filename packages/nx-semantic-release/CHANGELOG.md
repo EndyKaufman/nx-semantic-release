@@ -1,3 +1,7 @@
+## <small>1.0.1 (2025-09-02)</small>
+
+* fix: set limit for commition to analize log ([61b69d8](https://github.com/EndyKaufman/nx-semantic-release/commit/61b69d8))
+
 ## 1.0.0 (2025-09-02)
 
 * fix: add "semantic-release-plugin-decorators" as dependency ([ce2aecd](https://github.com/EndyKaufman/nx-semantic-release/commit/ce2aecd))
