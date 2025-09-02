@@ -21,6 +21,7 @@ export const exec = (
       command,
       {
         env: process.env,
+        maxBuffer: 9 * 1024 * 500,
         ...rest,
       },
       (error, stdout, stderr) => {
