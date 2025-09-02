@@ -56,6 +56,9 @@
     "semantic-release-plugin-decorators": "3.0.1"
   },
   "devDependencies": {
+    "@swc/core": "1.5.7",
+    "@swc/helpers": "0.5.12",
+    "@swc-node/register": "1.9.2",
     "@nx/eslint": "19.6.0",
     "@nx/eslint-plugin": "19.6.0",
     "@nx/jest": "19.6.0",
