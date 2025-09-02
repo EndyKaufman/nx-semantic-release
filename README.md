@@ -1,4 +1,4 @@
-# @theunderscorer/nx-semantic-release
+# @endykaufman/nx-semantic-release
 
 [nx](https://nx.dev/) plugin for automated releases, powered
 by [semantic-release](https://github.com/semantic-release/semantic-release)
@@ -7,15 +7,15 @@ by [semantic-release](https://github.com/semantic-release/semantic-release)
 
 Under the hood, it uses project graph from nx to analyze commits for every configured project and filters out these commits that doesn't affect given project or it's dependencies.
 
-<a href="https://www.buymeacoffee.com/theunderscorer" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+<a href="https://www.buymeacoffee.com/endykaufman" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 ## Installation
 
 Run:
 
 ```shell
-npm install -D @theunderscorer/nx-semantic-release
-nx g @theunderscorer/nx-semantic-release:install
+npm install -D @endykaufman/nx-semantic-release
+nx g @endykaufman/nx-semantic-release:install
 ```
 
 For now this package supports only <b>Independent</b> versioning mode, synced mode is planned to be added soon.
@@ -28,12 +28,12 @@ configuration looks like this:
 ```json
 {
   "semantic-release": {
-    "executor": "@theunderscorer/nx-semantic-release:semantic-release"
+    "executor": "@endykaufman/nx-semantic-release:semantic-release"
   }
 }
 ```
 
-> Hint: You can also use our generator `nx g @theunderscorer/nx-semantic-release:setup-project $PROJECT_NAME` to generate this configuration.
+> Hint: You can also use our generator `nx g @endykaufman/nx-semantic-release:setup-project $PROJECT_NAME` to generate this configuration.
 
 After running this, the executor will do the following:
 
@@ -80,7 +80,7 @@ The following examples are all the same.
 ```json
 {
   "nxrelease": {
-    "repositoryUrl": "https://github.com/TheUnderScorer/nx-semantic-release"
+    "repositoryUrl": "https://github.com/EndyKaufman/nx-semantic-release"
   }
 }
 ```
@@ -89,21 +89,21 @@ The following examples are all the same.
 
 ```yaml
 ---
-repositoryUrl: 'https://github.com/TheUnderScorer/nx-semantic-release'
+repositoryUrl: 'https://github.com/EndyKaufman/nx-semantic-release'
 ```
 
 * Via `nxrelease.config.js` file:
 
 ```js
 module.exports = {
-  repositoryUrl: 'https://github.com/TheUnderScorer/nx-semantic-release',
+  repositoryUrl: 'https://github.com/EndyKaufman/nx-semantic-release',
 };
 ```
 
 * Via CLI arguments:
 
 ```
-$ nx semantic-release app-c --repositoryUrl "https://github.com/TheUnderScorer/nx-semantic-release"
+$ nx semantic-release app-c --repositoryUrl "https://github.com/EndyKaufman/nx-semantic-release"
 ```
 
 ### Available Options
@@ -139,9 +139,9 @@ $ nx semantic-release app-c --repositoryUrl "https://github.com/TheUnderScorer/n
 | Token           | Expands into                                                                                  |
 | --------------- | --------------------------------------------------------------------------------------------- |
 | ${RELATIVE_PROJECT_DIR}  | Resolves to the current project relative directory within the current workspace (ex. `apps/app-a`) |
-| ${PROJECT_DIR}  | Resolves to the current project directory (ex. `/Users/theunderscorer/nx-monorepo/apps/app-a`) |
+| ${PROJECT_DIR}  | Resolves to the current project directory (ex. `/Users/endykaufman/nx-monorepo/apps/app-a`) |
 | ${PROJECT_NAME} | Resolves to the current project name (ex. `app-a`)                                            |
-| ${WORKSPACE_DIR}| Resolves to the current workspace directory (ex. `/Users/theunderscorer/nx-monorepo`)          |
+| ${WORKSPACE_DIR}| Resolves to the current workspace directory (ex. `/Users/endykaufman/nx-monorepo`)          |
 
 
 Every available option support tokens - this included nested objects and arrays.

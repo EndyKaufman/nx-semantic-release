@@ -2,7 +2,7 @@
   "version": 2,
   "outputCapture": "direct-nodejs",
   "$schema": "http://json-schema.org/schema",
-  "$id": "theunderscorer-semantic-release",
+  "$id": "endykaufman-semantic-release",
   "title": "NX Semantic Release",
   "description": "Automate versioning and CHANGELOG generation.",
   "type": "object",

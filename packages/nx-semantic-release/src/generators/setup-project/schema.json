@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "title": "@theunderscorer/nx-semantic-release setup generator for project",
+  "title": "@endykaufman/nx-semantic-release setup generator for project",
   "type": "object",
   "properties": {
     "projectName": {

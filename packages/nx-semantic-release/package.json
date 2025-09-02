@@ -1,5 +1,5 @@
 {
-  "name": "@theunderscorer/nx-semantic-release",
+  "name": "@endykaufman/nx-semantic-release",
   "version": "2.12.0",
   "description": "Semantic release for NX.",
   "publishConfig": {
@@ -15,12 +15,12 @@
   },
   "private": false,
   "author": {
-    "email": "przemyslawzydek@gmail.com",
+    "email": "admin@site15.ru",
     "name": "Przemysław Zydek"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TheUnderScorer/nx-semantic-release"
+    "url": "https://github.com/EndyKaufman/nx-semantic-release"
   },
   "engines": {
     "node": ">=16.0.0"

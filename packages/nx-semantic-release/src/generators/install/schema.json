@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "title": "@theunderscorer/nx-semantic-release installator",
+  "title": "@endykaufman/nx-semantic-release installator",
   "type": "object",
   "properties": {
     "baseBranch": {
@@ -17,7 +17,7 @@
     "repositoryUrl": {
       "description": "Remote repository url",
       "type": "string",
-      "x-prompt": "What is the remote repository url? (example: https://github.com/TheUnderScorer/nx-semantic-release)"
+      "x-prompt": "What is the remote repository url? (example: https://github.com/EndyKaufman/nx-semantic-release)"
     },
     "github": {
       "description": "Create github releases",

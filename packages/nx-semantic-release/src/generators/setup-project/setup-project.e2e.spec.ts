@@ -27,11 +27,11 @@ describe('Setup project', () => {
 
   it('should setup project', async () => {
     await runNxCommandAsync(
-      `generate @theunderscorer/nx-semantic-release:setup-project ${project}`
+      `generate @endykaufman/nx-semantic-release:setup-project ${project}`
     );
 
     assertProjectConfiguration({
-      executor: '@theunderscorer/nx-semantic-release:semantic-release',
+      executor: '@endykaufman/nx-semantic-release:semantic-release',
       options: {
         github: true,
         changelog: true,
@@ -43,11 +43,11 @@ describe('Setup project', () => {
 
   it('should setup project using given configuration', async () => {
     await runNxCommandAsync(
-      `generate @theunderscorer/nx-semantic-release:setup-project ${project} --github=false --changelog=false --npm=false --tagFormat=test`
+      `generate @endykaufman/nx-semantic-release:setup-project ${project} --github=false --changelog=false --npm=false --tagFormat=test`
     );
 
     assertProjectConfiguration({
-      executor: '@theunderscorer/nx-semantic-release:semantic-release',
+      executor: '@endykaufman/nx-semantic-release:semantic-release',
       options: {
         github: false,
         changelog: false,
@@ -59,7 +59,7 @@ describe('Setup project', () => {
 
   it('should create valid project configuration that can be released', async () => {
     await runNxCommandAsync(
-      `generate @theunderscorer/nx-semantic-release:setup-project ${project} --github=false --changelog=true --npm=true`
+      `generate @endykaufman/nx-semantic-release:setup-project ${project} --github=false --changelog=true --npm=true`
     );
 
     updateFile(projectConfigurationPath, (file) => {

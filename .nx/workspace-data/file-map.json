@@ -1,0 +1,477 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.6.0",
+  "deps": {
+    "@nx/devkit": "19.6.0",
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/exec": "7.1.0",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/github": "11.0.5",
+    "@semantic-release/npm": "12.0.2",
+    "cosmiconfig": "^7.0.1",
+    "deep-map": "^2.0.0",
+    "es6-weak-map": "^2.0.3",
+    "remeda": "^0.0.32",
+    "semantic-release": "24.2.7",
+    "semantic-release-plugin-decorators": "4.0.0",
+    "@nx/eslint": "19.6.0",
+    "@nx/eslint-plugin": "19.6.0",
+    "@nx/jest": "19.6.0",
+    "@nx/js": "19.6.0",
+    "@nx/node": "19.6.0",
+    "@nx/plugin": "19.6.0",
+    "@nx/web": "19.6.0",
+    "@nx/workspace": "19.6.0",
+    "@types/fs-extra": "^11.0.1",
+    "@types/jest": "29.5.12",
+    "@types/node": "18.16.9",
+    "@types/semantic-release": "21.1.0",
+    "@typescript-eslint/eslint-plugin": "7.18.0",
+    "@typescript-eslint/parser": "7.18.0",
+    "@zerollup/ts-transform-paths": "^1.7.18",
+    "ajv": "^8.12.0",
+    "conventional-changelog-conventionalcommits": "^9.1.0",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "9.1.0",
+    "fs-extra": "^11.1.1",
+    "gitlog": "^5.1.0",
+    "jest": "29.7.0",
+    "jest-environment-jsdom": "29.7.0",
+    "nx": "19.6.0",
+    "prettier": "2.7.1",
+    "rimraf": "^4.1.2",
+    "ts-jest": "29.1.0",
+    "ts-node": "10.9.1",
+    "ttypescript": "^1.5.13",
+    "type-fest": "^2.8.0",
+    "typescript": "5.5.4"
+  },
+  "pathMappings": {
+    "@endykaufman/nx-semantic-release": [
+      "packages/nx-semantic-release/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "nx-semantic-release": [
+        {
+          "file": "packages/nx-semantic-release/.babelrc",
+          "hash": "1185090046784686875"
+        },
+        {
+          "file": "packages/nx-semantic-release/.eslintrc.json",
+          "hash": "13800677001662881425"
+        },
+        {
+          "file": "packages/nx-semantic-release/CHANGELOG.md",
+          "hash": "3015082738978782960"
+        },
+        {
+          "file": "packages/nx-semantic-release/README.md",
+          "hash": "503962271154606042"
+        },
+        {
+          "file": "packages/nx-semantic-release/builders.json",
+          "hash": "17133958811684830447"
+        },
+        {
+          "file": "packages/nx-semantic-release/generators.json",
+          "hash": "2646060369556507572"
+        },
+        {
+          "file": "packages/nx-semantic-release/jest.config.ts",
+          "hash": "14001148308130509301"
+        },
+        {
+          "file": "packages/nx-semantic-release/package.json",
+          "hash": "14701672855220720485",
+          "deps": [
+            "npm:@semantic-release/git"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/project.json",
+          "hash": "10227126093199200386"
+        },
+        {
+          "file": "packages/nx-semantic-release/src/common/git.spec.ts",
+          "hash": "710965734771802098"
+        },
+        {
+          "file": "packages/nx-semantic-release/src/common/git.ts",
+          "hash": "7517880881475475536",
+          "deps": [
+            "npm:@nx/devkit",
+            "npm:nx"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/common/project.spec.ts",
+          "hash": "4798086403122344093",
+          "deps": [
+            "npm:@nx/plugin"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/common/project.ts",
+          "hash": "6665132499857652936",
+          "deps": [
+            "npm:@nx/devkit",
+            "npm:remeda"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/config/apply-tokens.spec.ts",
+          "hash": "4630267619973699286"
+        },
+        {
+          "file": "packages/nx-semantic-release/src/config/apply-tokens.ts",
+          "hash": "3674838031779170968",
+          "deps": [
+            "npm:deep-map"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/executors/semantic-release/default-options.ts",
+          "hash": "3628591787422508817"
+        },
+        {
+          "file": "packages/nx-semantic-release/src/executors/semantic-release/executor.ts",
+          "hash": "10800988123100857312"
+        },
+        {
+          "file": "packages/nx-semantic-release/src/executors/semantic-release/get-semantic-release.ts",
+          "hash": "9870388870677225923"
+        },
+        {
+          "file": "packages/nx-semantic-release/src/executors/semantic-release/plugins.ts",
+          "hash": "17077888464360052841",
+          "deps": [
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/executors/semantic-release/schema.json",
+          "hash": "4227897921266183596"
+        },
+        {
+          "file": "packages/nx-semantic-release/src/executors/semantic-release/semantic-release.e2e.spec.ts",
+          "hash": "8213497337307504756",
+          "deps": [
+            "npm:type-fest",
+            "npm:@nx/plugin"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/executors/semantic-release/semantic-release.spec.ts",
+          "hash": "16832215732712010409",
+          "deps": [
+            "npm:@nx/plugin",
+            "npm:@nrwl/devkit"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/executors/semantic-release/semantic-release.ts",
+          "hash": "8579250019942527272",
+          "deps": [
+            "npm:@nx/devkit",
+            "npm:cosmiconfig",
+            "npm:nx"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/generators/install/create-config-file.ts",
+          "hash": "5200483881093309044",
+          "deps": [
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/generators/install/enforce-commit-deps.ts",
+          "hash": "9357100565913325005",
+          "deps": [
+            "npm:@nx/devkit",
+            "npm:type-fest"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/generators/install/generator.ts",
+          "hash": "13086037246794734725"
+        },
+        {
+          "file": "packages/nx-semantic-release/src/generators/install/install.e2e.spec.ts",
+          "hash": "16277669900285690194",
+          "deps": [
+            "npm:@nx/plugin",
+            "npm:type-fest"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/generators/install/install.ts",
+          "hash": "11546340606550646379",
+          "deps": [
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/generators/install/schema.json",
+          "hash": "3704965226296738781"
+        },
+        {
+          "file": "packages/nx-semantic-release/src/generators/setup-project/generator.ts",
+          "hash": "3837231497644145735"
+        },
+        {
+          "file": "packages/nx-semantic-release/src/generators/setup-project/schema.json",
+          "hash": "5169125737257512433"
+        },
+        {
+          "file": "packages/nx-semantic-release/src/generators/setup-project/setup-project.e2e.spec.ts",
+          "hash": "616561960400781512",
+          "deps": [
+            "npm:@nx/plugin",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/generators/setup-project/setup-project.ts",
+          "hash": "306518470901030637",
+          "deps": [
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/index.ts",
+          "hash": "3176622742224754093",
+          "deps": [
+            "npm:es6-weak-map"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/semantic-release-plugin/analyze-commits.ts",
+          "hash": "1544413133086213879",
+          "deps": [
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/semantic-release-plugin/executor-context.ts",
+          "hash": "16735198102464541809",
+          "deps": [
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/semantic-release-plugin/index.ts",
+          "hash": "6523331839709610711"
+        },
+        {
+          "file": "packages/nx-semantic-release/src/tests/cleanup-test-repo.ts",
+          "hash": "13735843866319922734",
+          "deps": [
+            "npm:fs-extra",
+            "npm:@nx/plugin",
+            "npm:rimraf"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/tests/constants.ts",
+          "hash": "4958870177207657686"
+        },
+        {
+          "file": "packages/nx-semantic-release/src/tests/files.ts",
+          "hash": "12597416288358425446",
+          "deps": [
+            "npm:@nx/plugin"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/tests/find-release-commit.ts",
+          "hash": "17739589545193661377"
+        },
+        {
+          "file": "packages/nx-semantic-release/src/tests/git.ts",
+          "hash": "9864201960492314130",
+          "deps": [
+            "npm:@nx/plugin"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/tests/logger.ts",
+          "hash": "17270146117398291760"
+        },
+        {
+          "file": "packages/nx-semantic-release/src/tests/release-notes.ts",
+          "hash": "16121155888752884288"
+        },
+        {
+          "file": "packages/nx-semantic-release/src/tests/setup-test-nx-workspace.ts",
+          "hash": "18154899574647945939",
+          "deps": [
+            "npm:@nx/plugin",
+            "npm:fs-extra"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/tests/setup-test-repo.ts",
+          "hash": "1597717594942039412",
+          "deps": [
+            "npm:type-fest",
+            "npm:@nx/plugin",
+            "npm:nx",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/tests/setup.ts",
+          "hash": "8574631046919558889"
+        },
+        {
+          "file": "packages/nx-semantic-release/src/tests/types.ts",
+          "hash": "15055197898362529112"
+        },
+        {
+          "file": "packages/nx-semantic-release/src/tests/utils.ts",
+          "hash": "13159052753044003477",
+          "deps": [
+            "npm:@nx/devkit",
+            "npm:@nx/plugin",
+            "npm:remeda"
+          ]
+        },
+        {
+          "file": "packages/nx-semantic-release/src/types.ts",
+          "hash": "3137476025374293514"
+        },
+        {
+          "file": "packages/nx-semantic-release/src/typings/semantic-release-plugin-decorators.d.ts",
+          "hash": "11503779768613992711"
+        },
+        {
+          "file": "packages/nx-semantic-release/src/utils/exec.ts",
+          "hash": "629998925597838513"
+        },
+        {
+          "file": "packages/nx-semantic-release/src/utils/executor.ts",
+          "hash": "8694808763334798734"
+        },
+        {
+          "file": "packages/nx-semantic-release/src/utils/promise-filter.ts",
+          "hash": "9985480190397768208"
+        },
+        {
+          "file": "packages/nx-semantic-release/tsconfig.json",
+          "hash": "12834038490315927699"
+        },
+        {
+          "file": "packages/nx-semantic-release/tsconfig.lib.json",
+          "hash": "17386289187582839114"
+        },
+        {
+          "file": "packages/nx-semantic-release/tsconfig.spec.json",
+          "hash": "8233053583808524189"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "17866138117546000433"
+      },
+      {
+        "file": ".github/workflows/close-stale-issues.yml",
+        "hash": "16183087724012831891"
+      },
+      {
+        "file": ".github/workflows/release.yml",
+        "hash": "12246840280261665779"
+      },
+      {
+        "file": ".github/workflows/tests.yml",
+        "hash": "1492326744800441114"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "18020170846028676971"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "9175937087874081623"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "1132135014424967668"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "16214534446767281707"
+      },
+      {
+        "file": "CODEOWNERS",
+        "hash": "9650171604460250121"
+      },
+      {
+        "file": "CONTRIBUTING.md",
+        "hash": "13819624619274994831"
+      },
+      {
+        "file": "README.md",
+        "hash": "1937985899160681172"
+      },
+      {
+        "file": "babel.config.json",
+        "hash": "13918569489643201829"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "17455814092248624279"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "6209981555354123166"
+      },
+      {
+        "file": "migrations.json",
+        "hash": "9856774080586760858"
+      },
+      {
+        "file": "nx.json",
+        "hash": "11392035294787262925"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "16009460119507009734"
+      },
+      {
+        "file": "package.json",
+        "hash": "16495942521865418980"
+      },
+      {
+        "file": "packages/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "scripts/release.ts",
+        "hash": "13976217210786091124"
+      },
+      {
+        "file": "scripts/tsconfig.scripts.json",
+        "hash": "7568244538697179729"
+      },
+      {
+        "file": "tools/tsconfig.tools.json",
+        "hash": "16088922570277978783"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "17053928686659676352"
+      }
+    ]
+  }
+}

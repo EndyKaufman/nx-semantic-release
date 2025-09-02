@@ -5,7 +5,7 @@ export * from './executor-context';
 
 const wrapperName = 'nx-semantic-release';
 
-const analyzeCommits = wrapStep('analyzeCommits', getCommitsForProject(true), {
+const analyzeCommits = wrapStep('analyzeCommits', getCommitsForProject(false), {
   wrapperName,
 });
 

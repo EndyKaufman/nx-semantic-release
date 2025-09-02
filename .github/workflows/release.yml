@@ -22,9 +22,9 @@ jobs:
 
       - name: Configure CI Git User
         run: |
-          git config --global user.name 'TheUnderScorer'
-          git config --global user.email 'przemyslawzydek@gmail.com'
-          git remote set-url origin https://TheUnderScorer:$GITHUB_TOKEN@github.com/TheUnderScorer/nx-semantic-release
+          git config --global user.name 'EndyKaufman'
+          git config --global user.email 'admin@site15.ru'
+          git remote set-url origin https://EndyKaufman:$GITHUB_TOKEN@github.com/EndyKaufman/nx-semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
@@ -32,7 +32,7 @@ jobs:
         run: npm ci
 
       - name: Link package
-        run: npm run build:skip-cache && npm link dist/packages/nx-semantic-release && npm ls @theunderscorer/nx-semantic-release
+        run: npm run build:skip-cache && npm link dist/packages/nx-semantic-release && npm ls @endykaufman/nx-semantic-release
 
       - name: Print versions
         run: |
