@@ -3,17 +3,17 @@
   "nxVersion": "19.6.0",
   "deps": {
     "@nx/devkit": "19.6.0",
-    "@semantic-release/changelog": "6.0.3",
-    "@semantic-release/exec": "7.1.0",
+    "@semantic-release/changelog": "6.0.2",
+    "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "@semantic-release/github": "11.0.5",
-    "@semantic-release/npm": "12.0.2",
+    "@semantic-release/github": "8.0.7",
+    "@semantic-release/npm": "9.0.2",
     "cosmiconfig": "^7.0.1",
     "deep-map": "^2.0.0",
     "es6-weak-map": "^2.0.3",
     "remeda": "^0.0.32",
     "semantic-release": "24.2.7",
-    "semantic-release-plugin-decorators": "4.0.0",
+    "semantic-release-plugin-decorators": "3.0.1",
     "@nx/eslint": "19.6.0",
     "@nx/eslint-plugin": "19.6.0",
     "@nx/jest": "19.6.0",
@@ -30,7 +30,7 @@
     "@typescript-eslint/parser": "7.18.0",
     "@zerollup/ts-transform-paths": "^1.7.18",
     "ajv": "^8.12.0",
-    "conventional-changelog-conventionalcommits": "^9.1.0",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
     "dotenv": "^16.3.1",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "9.1.0",
@@ -56,96 +56,52 @@
   "fileMap": {
     "nonProjectFiles": [
       {
+        "file": "scripts/release.ts",
+        "hash": "13976217210786091124"
+      },
+      {
         "file": ".eslintrc.json",
         "hash": "17866138117546000433"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "16214534446767281707"
-      },
-      {
-        "file": "migrations.json",
-        "hash": "9856774080586760858"
-      },
-      {
-        "file": "nx.json",
-        "hash": "11392035294787262925"
-      },
-      {
-        "file": "README.md",
-        "hash": "4912075872385126123"
-      },
-      {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
-      },
-      {
-        "file": "package.json",
-        "hash": "12938775554305111721"
-      },
-      {
-        "file": "tools/tsconfig.tools.json",
-        "hash": "16088922570277978783"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "6209981555354123166"
       },
       {
         "file": ".github/workflows/release.yml",
         "hash": "2483060710604786926"
       },
       {
-        "file": "CONTRIBUTING.md",
-        "hash": "13819624619274994831"
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": "tools/tsconfig.tools.json",
+        "hash": "16088922570277978783"
       },
       {
         "file": "tsconfig.base.json",
         "hash": "3098866386902154249"
       },
       {
-        "file": "scripts/tsconfig.scripts.json",
-        "hash": "7568244538697179729"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "9175937087874081623"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "1132135014424967668"
-      },
-      {
-        "file": "tmp/nx-e2e/proj/.vscode/extensions.json",
-        "hash": "4134969992917317260"
-      },
-      {
         "file": "jest.config.ts",
         "hash": "17455814092248624279"
       },
       {
-        "file": ".gitignore",
-        "hash": "18020170846028676971"
+        "file": "jest.preset.js",
+        "hash": "6209981555354123166"
       },
       {
-        "file": "babel.config.json",
-        "hash": "13918569489643201829"
-      },
-      {
-        "file": "scripts/release.ts",
-        "hash": "13976217210786091124"
+        "file": "nx.json",
+        "hash": "11392035294787262925"
       },
       {
         "file": ".github/workflows/tests.yml",
         "hash": "7323877897754339927"
       },
       {
-        "file": "packages/.gitkeep",
-        "hash": "3244421341483603138"
+        "file": ".gitignore",
+        "hash": "11086638775838095515"
       },
       {
-        "file": "CODEOWNERS",
-        "hash": "9650171604460250121"
+        "file": "README.md",
+        "hash": "4912075872385126123"
       },
       {
         "file": ".github/workflows/close-stale-issues.yml",
@@ -153,7 +109,47 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "17086085187387439316"
+        "hash": "3767733326708234749"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "9175937087874081623"
+      },
+      {
+        "file": "CODEOWNERS",
+        "hash": "9650171604460250121"
+      },
+      {
+        "file": "packages/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "package.json",
+        "hash": "5563829855984421952"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "16214534446767281707"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "1132135014424967668"
+      },
+      {
+        "file": "CONTRIBUTING.md",
+        "hash": "13819624619274994831"
+      },
+      {
+        "file": "babel.config.json",
+        "hash": "13918569489643201829"
+      },
+      {
+        "file": "scripts/tsconfig.scripts.json",
+        "hash": "7568244538697179729"
+      },
+      {
+        "file": "migrations.json",
+        "hash": "9856774080586760858"
       }
     ],
     "projectFileMap": {
