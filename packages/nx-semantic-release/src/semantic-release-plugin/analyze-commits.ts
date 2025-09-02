@@ -70,5 +70,5 @@ async function filterCommits(
     );
   }
 
-  return result;
+  return result.slice(-500);
 }
